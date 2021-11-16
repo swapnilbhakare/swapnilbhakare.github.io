@@ -190,7 +190,7 @@
 
 /* For Medium Screens Ipads and Tabs */
 
-@media (min-width: 768px) and (max-width:1024px) {
+@media (min-width: 600px) and (max-width:1024px) {
   .container {
       width: 700px;
       max-width: 90%;
@@ -353,8 +353,10 @@
       width: 100%;
   }
   footer .social_section {
-      display: block;
+    grid-column-gap: 50px;
+    grid-row-gap: 15px;
       margin: 45px auto;
+
   }
   footer .left h4 {
       font-size: 20px;
