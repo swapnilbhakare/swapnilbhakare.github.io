@@ -1,261 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Swapnil Bhakare - Data Engineer</title>
-    <!-- font awesome icon cdn -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-    <!-- Google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+Mono:wght@400;500;700&family=Roboto:wght@100;300&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Aos css link  -->
-    <link rel="stylesheet" type="text/css" href="./css/aos.css" />
-    <!-- custom stylesheet link -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/mobile.css">
-  </head>
-  <body onscroll="scrollWin()">
-    <!-- Preloader -->
-    <div class="preloader">
-      <img src="./images/preloader.gif" alt="" />
-    </div>
 
-    <!-- navbar -->
-    <div class="hamberger">
-      <span></span>
-      <span></span>
-      <span></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swapnil Bhakare - Data Engineer</title>
+  <!-- font awesome icon cdn -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <!-- Google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+Mono:wght@400;500;700&family=Roboto:wght@100;300&display=swap"
+    rel="stylesheet" />
+  <!-- Aos css link  -->
+  <link rel="stylesheet" type="text/css" href="./css/aos.css" />
+  <!-- custom stylesheet link -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/mobile.css">
+</head>
+
+<body onscroll="scrollWin()">
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="./images/preloader.gif" alt="" />
+  </div>
+
+  <!-- navbar -->
+  <div class="hamberger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav class="container flex">
+    <div class="logo">
+      <span><strong>Swapnil Bhakare</strong></span>
     </div>
-    <nav class="container flex">
-      <div class="logo">
-        <span><strong>Swapnil Bhakare</strong></span>
+    <ul class="flex">
+      <li><a class="nav-link" href="#about">About</a></li>
+      <li><a class="nav-link" href="#skills">Skills</a></li>
+      <li><a class="nav-link" href="#work">Projects</a></li>
+      <li><a class="nav-link" href="#awards">Awards</a></li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- home section -->
+  <section id="home" class="container flex">
+    <div class="left">
+      <h1>I'm Swapnil Bhakare</h1>
+      <p>
+        Data Engineer with 3.5+ years of experience across Data Engineering and Technical Support.
+        Skilled in building scalable ETL pipelines, automating data workflows, and delivering analytics-ready data
+        using AWS (Glue, Redshift, Lambda, EMR, Airflow), PySpark, and SQL.
+        Passionate about data reliability, automation, and visualization.
+      </p>
+    </div>
+    <div class="right">
+      <div class="img swap"></div>
+      <div class="img swap1"></div>
+    </div>
+    <div class="spinner"></div>
+  </section>
+
+  <!-- about section -->
+  <section id="about" class="container flex">
+    <div class="left" data-aos="fade-right">
+      <div class="flex">
+        <a href="https://github.com/swapnilbhakare" target="_blank"><i class="fab fa-github"></i> GitHub
+          <span>→</span></a>
+        <a href="https://www.linkedin.com/in/swapnil-bhakare" target="_blank"><i class="fab fa-linkedin"></i>
+          LinkedIn <span>→</span></a>
+        <a href="https://twitter.com/SwapnilBhakre_7" target="_blank"><i class="fab fa-twitter"></i> Twitter
+          <span>→</span></a>
+        <a href="./DATA_ENGINEER_Swapnil.pdf" download class="download-btn"><i class="fas fa-file-download"></i> Resume
+          <span>→</span></a>
       </div>
-      <ul class="flex">
-        <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#skills">Skills</a></li>
-        <li><a class="nav-link" href="#work">Projects</a></li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-- home section -->
-    <section id="home" class="container flex">
-      <div class="left">
-        <h1>I'm Swapnil Bhakare</h1>
-        <p>
-          I am a Data Engineer passionate about building robust, scalable, and automated data pipelines. 
-          I transform raw data into actionable insights using Python, PySpark, AWS, and modern ETL frameworks.
+    </div>
+    <div class="right">
+      <div>
+        <h3 data-aos="fade-left">
+          A dedicated Data Engineer passionate about designing end-to-end data solutions and workflow automation
+          platforms.
+        </h3>
+        <p data-aos="fade-left">
+          I specialize in developing reliable, scalable, and automated ETL pipelines using PySpark, Python, and AWS
+          services.
+          I enjoy turning raw data into actionable insights, ensuring data quality, and collaborating with
+          cross-functional teams
+          to enable data-driven decisions.
         </p>
       </div>
-      <div class="right">
-        <div class="img swap"></div>
-        <div class="img swap1"></div>
-      </div>
-      <div class="spinner"></div>
-    </section>
+    </div>
+  </section>
 
-    <!-- about section -->
-    <section id="about" class="container flex">
+  <!-- skills section -->
+  <section id="skills" class="container skills">
+    <h2 class="section_heading" data-aos="fade-right">Education & Skills</h2>
+    <div class="content flex">
       <div class="left" data-aos="fade-right">
-        <div class="flex">
-          <a href="#"><i class="fab fa-github"></i> GitHub</a>
-          <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
-          <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        <div class="inner__left">
+          <div class="heading">
+            <i class="fas fa-graduation-cap"></i>
+            <h5>Education</h5>
+          </div>
+          <div class="timeline__wrapper">
+            <div class="item">
+              <p>June 2017 – April 2020</p>
+              <p class="center">Dr. Babasaheb Ambedkar Marathwada University</p>
+              <p>Bachelor of Computer Application (B.C.A)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="inner__right">
+          <div class="heading">
+            <i class="fas fa-suitcase"></i>
+            <h5>Experience</h5>
+          </div>
+          <div class="timeline__wrapper">
+            <div class="item">
+              <p>Jan 2024 – Present</p>
+              <p class="center">Data Engineer – BI Hub Solution</p>
+              <p>
+                • Designed & implemented ETL pipelines using PySpark & AWS Glue for GenFlow automation platform.<br />
+                • Migrated & transformed data into Redshift for analytics.<br />
+                • Automated workflows using Airflow, Lambda, and Python scripts.<br />
+                • Improved pipeline efficiency by 20% with optimized S3 → Glue → Redshift flow.<br />
+                • Built validation scripts and monitoring systems ensuring data accuracy.
+              </p>
+            </div>
+            <div class="item">
+              <p>Jan 2022 – Dec 2023</p>
+              <p class="center">Programmer – Tata Consultancy Services</p>
+              <p>
+                • Delivered L1/L2 Technical Support ensuring SLA compliance.<br />
+                • Diagnosed and resolved issues across Windows/Linux servers & Azure AD.<br />
+                • Managed user provisioning, access control, and system health checks.<br />
+                • Documented troubleshooting processes to enhance operational efficiency.
+              </p>
+            </div>
+            <div class="item">
+              <p>Sep 2021 – Nov 2021</p>
+              <p class="center">Data Annotation Specialist – Digiyoda</p>
+              <p>
+                • Labeled & validated large datasets (98% accuracy) for ML/NLP models.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+
       <div class="right">
-        <div>
-          <h3 data-aos="fade-left">
-            I am 27 years old, a dedicated Data Engineer, and passionate about designing end-to-end data solutions. 
-            I have hands-on experience with ETL pipelines, data warehousing, AWS cloud services, and real-time data processing.
-          </h3>
-          <p data-aos="fade-left">
-            I enjoy solving complex data problems, automating workflows, and delivering analytics-ready datasets to drive business decisions. 
-            I believe in continuous learning and exploring new technologies to stay ahead in the data engineering field.
+        <div class="skills__wrapper" data-aos="fade-left">
+          <div class="skill-box">
+            <h4>Python</h4>
+            <div class="progress__wrap"><span data-percent="90" class="progress__bar"><span
+                  class="tooltip">90%</span></span></div>
+          </div>
+          <div class="skill-box">
+            <h4>PySpark</h4>
+            <div class="progress__wrap"><span data-percent="85" class="progress__bar"><span
+                  class="tooltip">85%</span></span></div>
+          </div>
+          <div class="skill-box">
+            <h4>SQL / Data Modeling</h4>
+            <div class="progress__wrap"><span data-percent="88" class="progress__bar"><span
+                  class="tooltip">88%</span></span></div>
+          </div>
+          <div class="skill-box">
+            <h4>AWS (S3, Glue, Redshift, Lambda, EMR)</h4>
+            <div class="progress__wrap"><span data-percent="80" class="progress__bar"><span
+                  class="tooltip">80%</span></span></div>
+          </div>
+          <div class="skill-box">
+            <h4>Airflow</h4>
+            <div class="progress__wrap"><span data-percent="75" class="progress__bar"><span
+                  class="tooltip">75%</span></span></div>
+          </div>
+          <div class="skill-box">
+            <h4>ETL / Data Pipelines</h4>
+            <div class="progress__wrap"><span data-percent="90" class="progress__bar"><span
+                  class="tooltip">90%</span></span></div>
+          </div>
+          <div class="skill-box">
+            <h4>Data Warehousing</h4>
+            <div class="progress__wrap"><span data-percent="80" class="progress__bar"><span
+                  class="tooltip">80%</span></span></div>
+          </div>
+          <div class="skill-box">
+            <h4>Power BI / Tableau</h4>
+            <div class="progress__wrap"><span data-percent="65" class="progress__bar"><span
+                  class="tooltip">65%</span></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- projects section -->
+  <section id="work" class="container work">
+    <h2 class="section_heading" data-aos="fade-right">Projects</h2>
+
+    <div class="flex row">
+      <div class="left" data-aos="fade-right">
+        <div class="content">
+          <h2>GenFlow – Workflow Automation & ETL Orchestration</h2>
+          <h3>BI Hub Solution, 2024</h3>
+          <p>
+            Developed a workflow automation platform that orchestrates ETL pipelines with drag-and-drop design.
+            Created PySpark Glue jobs for transformations and Redshift loading, integrated with Airflow for
+            orchestration,
+            and implemented monitoring, scheduling, and data validation for reliability.
           </p>
         </div>
       </div>
-    </section>
-
-    <!-- skills section -->
-    <section id="skills" class="container skills">
-      <h2 class="section_heading" data-aos="fade-right">Education & Skills</h2>
-      <div class="content flex">
-        <div class="left" data-aos="fade-right">
-          <div class="inner__left">
-            <div class="heading">
-              <i class="fas fa-graduation-cap"></i>
-              <h5>Education</h5>
-            </div>
-            <div class="timeline__wrapper">
-              <div class="item">
-                <p>2015 - 2016</p>
-                <p class="center">High School</p>
-                <p>Secondary Education</p>
-              </div>
-              <div class="item">
-                <p>2017 - 2020</p>
-                <p class="center">University</p>
-                <p>Bachelor of Computer Application</p>
-              </div>
-            </div>
-          </div>
-          <div class="inner__right">
-            <div class="heading">
-              <i class="fas fa-suitcase"></i>
-              <h5>Experience</h5>
-            </div>
-            <div class="timeline__wrapper">
-              <div class="item">
-                <p>January 2024 – Present</p>
-                <p class="center">Data Engineer — Bi Hub Solution</p>
-                <p>
-                  • Designed and optimized ETL pipelines using PySpark and Python.<br />
-                  • Built automated workflows in Airflow to process 5M+ daily POS transactions.<br />
-                  • Implemented cloud data solutions on AWS (S3, Glue, Redshift) for analytics-ready datasets.<br />
-                  • Collaborated with analysts and data scientists to ensure high-quality data delivery.
-                </p>
-              </div>
-              <div class="item">
-                <p>January 2022 – December 2023</p>
-                <p class="center">Data Engineer — TCS</p>
-                <p>
-                  • Developed scalable data pipelines for real-time and batch processing.<br />
-                  • Worked with SQL Server, AWS DMS, and Athena for seamless data ingestion.<br />
-                  • Automated ETL tasks and monitoring with AWS Lambda and EventBridge.<br />
-                  • Applied data modeling and optimization techniques to improve query performance.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="right">
-          <div class="skills__wrapper" data-aos="fade-left">
-            <div class="skill-box"><h4>Python</h4><div class="progress__wrap"><span data-percent="85" class="progress__bar"><span class="tooltip">85%</span></span></div></div>
-            <div class="skill-box"><h4>PySpark</h4><div class="progress__wrap"><span data-percent="80" class="progress__bar"><span class="tooltip">80%</span></span></div></div>
-            <div class="skill-box"><h4>SQL / Data Modeling</h4><div class="progress__wrap"><span data-percent="85" class="progress__bar"><span class="tooltip">85%</span></span></div></div>
-            <div class="skill-box"><h4>AWS (S3, Glue, Redshift, Lambda)</h4><div class="progress__wrap"><span data-percent="80" class="progress__bar"><span class="tooltip">80%</span></span></div></div>
-            <div class="skill-box"><h4>Airflow</h4><div class="progress__wrap"><span data-percent="75" class="progress__bar"><span class="tooltip">75%</span></span></div></div>
-            <div class="skill-box"><h4>Kafka / NiFi / Iceberg</h4><div class="progress__wrap"><span data-percent="70" class="progress__bar"><span class="tooltip">70%</span></span></div></div>
-            <div class="skill-box"><h4>ETL / Data Pipelines</h4><div class="progress__wrap"><span data-percent="85" class="progress__bar"><span class="tooltip">85%</span></span></div></div>
-            <div class="skill-box"><h4>CI/CD / GitHub Actions</h4><div class="progress__wrap"><span data-percent="75" class="progress__bar"><span class="tooltip">75%</span></span></div></div>
-            <div class="skill-box"><h4>Power BI / Tableau</h4><div class="progress__wrap"><span data-percent="65" class="progress__bar"><span class="tooltip">65%</span></span></div></div>
-          </div>
+      <div class="right" data-aos="fade-left">
+        <div class="img-wrapper">
+          <img src="./images/pipline.png" alt="GenFlow Project" />
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- projects section -->
-    <section id="work" class="container work">
-      <h2 class="section_heading" data-aos="fade-right">Projects</h2>
+  <!-- awards section -->
+  <section id="awards" class="container">
+    <h2 class="section_heading" data-aos="fade-right">Awards & Recognition</h2>
+    <ul data-aos="fade-up">
+      <li><strong>Xcelerate Victor Award – TCS (2023):</strong> Recognized for ownership and high-impact delivery.</li>
+      <li><strong>Xcelerate Warrior Award – TCS (2022):</strong> Honored for continuous learning and technical
+        advancement.</li>
+    </ul>
 
-      <div class="flex row">
-        <div class="left" data-aos="fade-right">
-          <div class="content">
-            <h2>Retail POS Data Pipeline</h2>
-            <h3>End-to-end AWS pipeline</h3>
-            <p>
-              Built a complete ETL pipeline for POS data using Python, PySpark, AWS Glue, S3, and Redshift.
-              Implemented automated data ingestion, transformation, validation, and incremental loading. 
-              Ensured real-time updates using CDC and event-driven workflows with EventBridge and Lambda.
-            </p>
-          </div>
-        </div>
-        <div class="right" data-aos="fade-left">
-          <div class="img-wrapper">
-            <img src="./images/data_pipeline.png" alt="Retail POS Pipeline" />
-          </div>
+    <h3 data-aos="fade-right" style="margin-top:20px;">Languages</h3>
+    <p data-aos="fade-up">English (Professional) | Hindi (Native) | Marathi (Native)</p>
+  </section>
+
+  <!-- contact section -->
+  <section id="contact" class="container contact">
+    <h2 class="section_heading" data-aos="fade-right">Contact Me</h2>
+    <div class="flex">
+      <div class="left" data-aos="fade-right">
+        <p>Let’s collaborate on data engineering, workflow automation, or analytics projects.</p>
+      </div>
+      <div class="right">
+        <p>Email: <a href="mailto:swapnilbhakare7@gmail.com">swapnilbhakare7@gmail.com</a></p>
+        <p>Phone: <a href="tel:+917030001343">+91 7030001343</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <footer class="container">
+    <div class="flex">
+      <div class="left" data-aos="fade-right">
+        <h4>Stay curious, stay data-driven! ✨</h4>
+      </div>
+      <div class="right">
+        <div class="social_section flex">
+          <a href="https://wa.me/+917030001343"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://github.com/swapnilbhakare"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/swapnil-bhakare"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/SwapnilBhakre_7"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
+    </div>
+    <hr />
+    <span>© 2025 Swapnil Bhakare</span>
+  </footer>
 
-      <div class="flex row">
-        <div class="left" data-aos="fade-right">
-          <div class="img-wrapper">
-            <img src="./images/streaming_pipeline.png" alt="Streaming Pipeline" />
-          </div>
-        </div>
-        <div class="right" data-aos="fade-left">
-          <div class="content">
-            <h2>Real-time Streaming Pipeline</h2>
-            <h3>Kafka + PySpark Streaming</h3>
-            <p>
-              Developed a real-time data ingestion and processing pipeline using Kafka and PySpark Streaming.
-              Applied schema validation, error handling, and windowed aggregations to process streaming events efficiently.
-            </p>
-          </div>
-        </div>
-      </div>
+  <script src="./js/main.js"></script>
+  <script src="./js/scroll.js"></script>
+  <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init({ duration: 2000 });
+  </script>
+</body>
 
-      <div class="flex row">
-        <div class="left" data-aos="fade-right">
-          <div class="content">
-            <h2>Data Lake ETL & Analytics</h2>
-            <h3>S3 + Redshift + Athena</h3>
-            <p>
-              Built a data lake architecture on S3 and automated ETL workflows using Glue. 
-              Created Athena queries and Redshift tables for analytics dashboards, enabling business insights and reporting.
-            </p>
-          </div>
-        </div>
-        <div class="right" data-aos="fade-left">
-          <div class="img-wrapper">
-            <img src="./images/data_lake.png" alt="Data Lake Project" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- contact section -->
-    <section id="contact" class="container contact">
-      <h2 class="section_heading" data-aos="fade-right">Contact Me</h2>
-      <div class="flex">
-        <div class="left" data-aos="fade-right">
-          <p>Let’s discuss data engineering, pipelines, or analytics solutions. I’m always open to new opportunities!</p>
-        </div>
-        <div class="right">
-          <p>Email: swapnilbhakare7@gmail.com</p>
-          <p>Phone: +91 7030001343</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- footer section -->
-    <footer class="container">
-      <div class="flex">
-        <div class="left" data-aos="fade-right">
-          <h4>Stay curious, stay data-driven! ✨</h4>
-        </div>
-        <div class="right">
-          <div class="social_section flex">
-            <a href="https://wa.me/+917030001343"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://github.com/swapnilbhakare"><i class="fab fa-github"></i></a>
-            <a href="https://in.linkedin.com/in/swapnil-bhakare"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/SwapnilBhakre_7"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <span>@copyright 2025 Swapnil Bhakare</span>
-    </footer>
-
-    <script src="./js/main.js"></script>
-    <script src="./js/scroll.js"></script>
-    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="./js/aos.js"></script>
-    <script>
-      AOS.init({ duration: 2000 });
-    </script>
-  </body>
 </html>

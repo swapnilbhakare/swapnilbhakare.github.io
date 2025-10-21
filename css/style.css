@@ -186,8 +186,9 @@ section#about {
 section#about .left,
 section#about .right {
   width: 50%;
-  padding: 10px;
+  padding: 20px;
 }
+
 section#about .left div {
   margin-right: 25px;
   justify-content: space-between;
@@ -195,9 +196,14 @@ section#about .left div {
 }
 
 section#about .left div a {
-  color: var(--white);
+  color: var(--white) !important;
   font-weight: 600;
   font-size: 1.2rem;
+  text-decoration: none;
+}
+
+section#about .left div a:hover i {
+  transform: scale(1.1);
 }
 section#about .left div a span {
   padding: 0 10px;
@@ -207,13 +213,25 @@ section#about .left div a:hover {
   color: var(--primary-color);
   transition: 0.55s;
 }
-section#about .left div a:hover span {
-  transform: translate(5px);
-  transition: 2s;
-  -webkit-transition: 2s;
-  -moz-transition: 2s;
-  -ms-transition: 2s;
-  -o-transition: 2s;
+section#about .left div a.download-btn {
+  color: var(--primary-color);
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  margin-top: 10px;
+  border: none;
+}
+
+section#about .left div a.download-btn:hover {
+  color: var(--white);
+  background: transparent;
+  border: none;
+  transform: none;
+  box-shadow: none;
 }
 section#about .right {
   padding: 10px 20px;
@@ -230,7 +248,14 @@ section#about .right div p {
 
 /* skill section style */
 section#skills {
-  margin: 20px auto;
+  margin: 60px auto;
+  padding: 40px 0;
+}
+
+/* work section style */
+section#work {
+  margin: 60px auto;
+  padding: 40px 0;
 }
 
 h2.section_heading{
@@ -339,6 +364,11 @@ section.skills
   text-transform: uppercase;
 }
 /* work section style */
+section#work {
+  margin: 60px auto;
+  padding: 40px 0;
+}
+
 .work .row{
   margin: 50px 0;
   align-items: flex-start;
@@ -382,9 +412,15 @@ section.skills
 }
 .work .row .img-wrapper img{
   position: relative;
-  width: 500px;
-  height: 300px;
+  width: 550px;
+  height: 350px;
   object-fit: cover;
+}
+
+
+
+.work .row .img-wrapper img.second-image {
+  margin-top: 10px;
 }
 
 .work .row .right .content h2,
@@ -394,9 +430,67 @@ section.skills
   margin-left: 50px;
 
 }
+/* awards section */
+section#awards {
+  margin: 60px auto;
+  padding: 40px 0;
+}
+
+section#awards ul {
+  margin-bottom: 40px;
+  padding-left: 0;
+}
+
+section#awards ul li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: var(--white);
+  font-size: 1rem;
+}
+
+section#awards ul li strong {
+  color: var(--primary-color);
+}
+
+section#awards h3 {
+  color: var(--white);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+section#awards p {
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* contact section */
+section#contact {
+  margin: 60px auto;
+  padding: 40px 0;
+}
+
+section#contact .right p {
+  color: var(--white);
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+section#contact .right p a {
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+section#contact .right p a:hover {
+  color: var(--primary-color);
+}
+
 /* footer style */
 footer{
-  padding-bottom: 25px;
+  padding: 40px 0 25px 0;
+  margin-top: 60px;
 }
 footer div.flex{
   margin-bottom: 10px;
@@ -445,6 +539,43 @@ footer .contact_section p{
   font-size: 16px;
   margin: 15px 0;
 
+}
+/* Mobile-specific overrides */
+@media only screen and (max-width: 600px) {
+  section#about .left div a {
+    color: var(--white) !important;
+    margin: 8px 0;
+    display: block;
+  }
+  
+  section#about .left div a.download-btn {
+    color: var(--primary-color);
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    margin: 10px 0;
+    border: none;
+  }
+  
+  section#about .left div a.download-btn:hover {
+    color: var(--white);
+    background: transparent;
+    border: none;
+  }
+  
+  /* Contact section mobile fixes */
+  section#contact .right p {
+    color: var(--white);
+    font-size: 1rem;
+  }
+  
+  section#contact .right p a {
+    color: var(--white) !important;
+  }
 }
 /* This class is used in js for background change */
 .changeColor{
