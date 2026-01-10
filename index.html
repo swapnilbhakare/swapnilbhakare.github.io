@@ -5,7 +5,17 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Swapnil Bhakare - Data Engineer</title>
+  <title>Swapnil Bhakare - Data Engineer | AWS | PySpark | ETL Pipelines</title>
+  <meta name="description"
+    content="Data Engineer with 4+ years experience in AWS, PySpark, ETL pipelines, and data warehousing. Skilled in Glue, Redshift, Airflow, and Python." />
+  <meta name="keywords"
+    content="Data Engineer, AWS, PySpark, ETL, Redshift, Glue, Airflow, Python, SQL, Data Pipelines" />
+  <meta name="author" content="Swapnil Bhakare" />
+  <meta property="og:title" content="Swapnil Bhakare - Data Engineer" />
+  <meta property="og:description" content="Data Engineer specializing in AWS cloud solutions and ETL pipelines" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://swapnilbhakare.github.io" />
+  <link rel="canonical" href="https://swapnilbhakare.github.io" />
   <!-- font awesome icon cdn -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
@@ -20,260 +30,660 @@
   <!-- custom stylesheet link -->
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/mobile.css">
+  <!-- Custom animations script -->
+  <script src="./animations.js" defer></script>
 </head>
 
 <body onscroll="scrollWin()">
-  <!-- Preloader -->
+  <!-- Preloader with Interactive Game -->
   <div class="preloader">
-    <img src="./images/preloader.gif" alt="" />
+    <div class="loader-game">
+      <div class="game-container">
+        <h3>Loading Portfolio...</h3>
+        <div class="snake-game">
+          <div class="snake-dot"></div>
+          <div class="snake-dot"></div>
+          <div class="snake-dot"></div>
+          <div class="food"></div>
+        </div>
+        <div class="loading-bar">
+          <div class="loading-progress"></div>
+        </div>
+        <p class="loading-text">Building something awesome...</p>
+      </div>
+    </div>
   </div>
 
-  <!-- navbar -->
-  <div class="hamberger">
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress"></div>
+
+  <!-- Stunning Navbar -->
+  <div class="mobile-menu" onclick="var menu = document.querySelector('.nav-items'); if(menu.style.right === '0px') { menu.style.right = '-100%'; this.classList.remove('active'); } else { menu.style.right = '0px'; menu.style.position = 'fixed'; menu.style.top = '80px'; menu.style.width = '250px'; menu.style.height = 'calc(100vh - 80px)'; menu.style.background = 'rgba(0,0,0,0.95)'; menu.style.zIndex = '999'; menu.style.display = 'flex'; menu.style.flexDirection = 'column'; menu.style.padding = '2rem'; this.classList.add('active'); }">
     <span></span>
     <span></span>
     <span></span>
   </div>
-  <nav class="container flex">
-    <div class="logo">
-      <span><strong>Swapnil Bhakare</strong></span>
+  <nav class="navbar-stunning">
+    <div class="nav-glass">
+      <div class="nav-brand">
+        <div class="brand-orb">
+          <div class="orb-inner">
+            <span>S</span>
+          </div>
+        </div>
+        <div class="brand-info">
+          <h2>Swapnil</h2>
+          <span>Data Engineer</span>
+        </div>
+      </div>
+      <div class="nav-items">
+        <a href="#home" class="nav-link active">
+          <div class="link-bg"></div>
+          <span>Home</span>
+        </a>
+        <a href="#experience" class="nav-link">
+          <div class="link-bg"></div>
+          <span>Experience</span>
+        </a>
+        <a href="#education" class="nav-link">
+          <div class="link-bg"></div>
+          <span>Education</span>
+        </a>
+        <a href="#skills" class="nav-link">
+          <div class="link-bg"></div>
+          <span>Skills</span>
+        </a>
+        <a href="#work" class="nav-link">
+          <div class="link-bg"></div>
+          <span>Work</span>
+        </a>
+        <a href="#awards" class="nav-link">
+          <div class="link-bg"></div>
+          <span>Awards</span>
+        </a>
+        <a href="#contact" class="nav-link cta">
+          <div class="link-bg"></div>
+          <span>Contact</span>
+        </a>
+      </div>
     </div>
-    <ul class="flex">
-      <li><a class="nav-link" href="#about">About</a></li>
-      <li><a class="nav-link" href="#skills">Skills</a></li>
-      <li><a class="nav-link" href="#work">Projects</a></li>
-      <li><a class="nav-link" href="#awards">Awards</a></li>
-      <li><a class="nav-link" href="#contact">Contact</a></li>
-    </ul>
   </nav>
 
   <!-- home section -->
-  <section id="home" class="container flex">
-    <div class="left">
-      <h1>I'm Swapnil Bhakare</h1>
-      <p>
-        Data Engineer with 3.5+ years of experience across Data Engineering and Technical Support.
-        Skilled in building scalable ETL pipelines, automating data workflows, and delivering analytics-ready data
-        using AWS (Glue, Redshift, Lambda, EMR, Airflow), PySpark, and SQL.
-        Passionate about data reliability, automation, and visualization.
-      </p>
-    </div>
-    <div class="right">
-      <div class="img swap"></div>
-      <div class="img swap1"></div>
+  <section id="home" class="flex">
+    <div class="container flex">
+      <div class="left">
+        <h1>I'm Swapnil Bhakare</h1>
+        <p>
+          Data Engineer with 4+ years of experience across Data Engineering and Technical Support.
+          Skilled in building scalable ETL pipelines, automating data workflows, and delivering analytics-ready data
+          using AWS (Glue, Redshift, Lambda, EMR, Airflow), PySpark, and SQL.
+          Passionate about data reliability, automation, and visualization.
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/swapnilbhakare" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/swapnil-bhakare" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/SwapnilBhakre_7" target="_blank" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="./DE_Swapnil_bhakare.pdf" download class="social-link resume-btn">
+            <i class="fas fa-file-download"></i>
+          </a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="img swap" loading="lazy"></div>
+      </div>
     </div>
     <div class="spinner"></div>
   </section>
 
-  <!-- about section -->
-  <section id="about" class="container flex">
-    <div class="left" data-aos="fade-right">
-      <div class="flex">
-        <a href="https://github.com/swapnilbhakare" target="_blank"><i class="fab fa-github"></i> GitHub
-          <span>→</span></a>
-        <a href="https://www.linkedin.com/in/swapnil-bhakare" target="_blank"><i class="fab fa-linkedin"></i>
-          LinkedIn <span>→</span></a>
-        <a href="https://twitter.com/SwapnilBhakre_7" target="_blank"><i class="fab fa-twitter"></i> Twitter
-          <span>→</span></a>
-        <a href="./" download class="download-btn"><i class="fas fa-file-download"></i> Resume
-          <span>→</span></a>
+  <!-- experience section -->
+  <section id="experience" class="container experience">
+    <h2 class="section_heading" data-aos="fade-right">Professional Experience</h2>
+    <div class="experience-timeline" data-aos="fade-up">
+
+      <div class="experience-item current">
+        <div class="timeline-marker">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="company-logo">
+              <i class="fas fa-building"></i>
+            </div>
+            <div class="experience-meta">
+              <h3>Data Engineer</h3>
+              <p class="company">NEWGEN TECHNOMATE LLP</p>
+              <span class="duration current-role">Jan 2024 – Present</span>
+            </div>
+          </div>
+          <div class="experience-content">
+            <div class="achievements">
+              <div class="achievement">
+                <i class="fas fa-check-circle"></i>
+                <span>Designed & implemented ETL pipelines using PySpark & AWS Glue</span>
+              </div>
+              <div class="achievement">
+                <i class="fas fa-check-circle"></i>
+                <span>Migrated & transformed data into Redshift for analytics</span>
+              </div>
+              <div class="achievement">
+                <i class="fas fa-check-circle"></i>
+                <span>Improved pipeline efficiency by 20% with optimized workflows</span>
+              </div>
+              <div class="achievement">
+                <i class="fas fa-check-circle"></i>
+                <span>Built validation scripts and monitoring systems</span>
+              </div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">PySpark</span>
+              <span class="tech-tag">AWS Glue</span>
+              <span class="tech-tag">Redshift</span>
+              <span class="tech-tag">Airflow</span>
+              <span class="tech-tag">Python</span>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div class="experience-item">
+        <div class="timeline-marker">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="company-logo">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="experience-meta">
+              <h3>Programmer</h3>
+              <p class="company">Tata Consultancy Services</p>
+              <span class="duration">Jan 2022 – Dec 2023</span>
+            </div>
+          </div>
+          <div class="experience-content">
+            <div class="achievements">
+              <div class="achievement">
+                <i class="fas fa-check-circle"></i>
+                <span>Delivered L1/L2 Technical Support ensuring SLA compliance</span>
+              </div>
+              <div class="achievement">
+                <i class="fas fa-check-circle"></i>
+                <span>Diagnosed issues across Windows/Linux servers & Azure AD</span>
+              </div>
+              <div class="achievement">
+                <i class="fas fa-check-circle"></i>
+                <span>Managed user provisioning and access control</span>
+              </div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">Windows Server</span>
+              <span class="tech-tag">Linux</span>
+              <span class="tech-tag">Azure AD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="timeline-marker">
+          <div class="timeline-dot"></div>
+        </div>
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="company-logo">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="experience-meta">
+              <h3>Frontend Developer</h3>
+              <p class="company">Octrans Technologies</p>
+              <span class="duration">May 2021 – Dec 2021</span>
+            </div>
+          </div>
+          <div class="experience-content">
+            <div class="achievements">
+              <div class="achievement">
+                <i class="fas fa-check-circle"></i>
+                <span>Developed reusable React components</span>
+              </div>
+              <div class="achievement">
+                <i class="fas fa-check-circle"></i>
+                <span>Integrated frontend with REST APIs</span>
+              </div>
+              <div class="achievement">
+                <i class="fas fa-check-circle"></i>
+                <span>Improved UI responsiveness and user experience</span>
+              </div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">REST APIs</span>
+              <span class="tech-tag">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div class="right">
-      <div>
-        <h3 data-aos="fade-left">
-          A dedicated Data Engineer passionate about designing end-to-end data solutions and workflow automation
-          platforms.
-        </h3>
-        <p data-aos="fade-left">
-          I specialize in developing reliable, scalable, and automated ETL pipelines using PySpark, Python, and AWS
-          services.
-          I enjoy turning raw data into actionable insights, ensuring data quality, and collaborating with
-          cross-functional teams
-          to enable data-driven decisions.
-        </p>
+  </section>
+
+  <!-- education section -->
+  <section id="education" class="container education">
+    <h2 class="section_heading" data-aos="fade-right">Education</h2>
+    <div class="education-container" data-aos="fade-up">
+      <div class="education-card">
+        <div class="education-header">
+          <div class="education-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="education-meta">
+            <h3>Bachelor of Computer Application (B.C.A)</h3>
+            <p class="university">Dr. Babasaheb Ambedkar Marathwada University</p>
+            <span class="duration">June 2017 – April 2020</span>
+          </div>
+        </div>
+        <div class="education-content">
+          <div class="subjects">
+            <span class="subject-tag">Computer Science</span>
+            <span class="subject-tag">Programming</span>
+            <span class="subject-tag">Database Systems</span>
+            <span class="subject-tag">Software Engineering</span>
+            <span class="subject-tag">Data Structures</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- skills section -->
   <section id="skills" class="container skills">
-    <h2 class="section_heading" data-aos="fade-right">Education & Skills</h2>
-    <div class="content flex">
-      <div class="left" data-aos="fade-right">
-        <div class="inner__left">
-          <div class="heading">
-            <i class="fas fa-graduation-cap"></i>
-            <h5>Education</h5>
-          </div>
-          <div class="timeline__wrapper">
-            <div class="item">
-              <p>June 2017 – April 2020</p>
-              <p class="center">Dr. Babasaheb Ambedkar Marathwada University</p>
-              <p>Bachelor of Computer Application (B.C.A)</p>
-            </div>
-          </div>
-        </div>
+    <h2 class="section_heading" data-aos="fade-right">Technical Skills</h2>
+    <div class="skills-showcase" data-aos="fade-left">
+      <div class="skills-grid">
 
-        <div class="inner__right">
-          <div class="heading">
-            <i class="fas fa-suitcase"></i>
-            <h5>Experience</h5>
-          </div>
-          <div class="timeline__wrapper">
-            <div class="item">
-              <p>Jan 2024 – Present</p>
-              <p class="center">Data Engineer – NEWGEN TECHNOMATE LLP</p>
-              <p>
-                • Designed & implemented ETL pipelines using PySpark & AWS Glue for GenFlow automation platform.<br />
-                • Migrated & transformed data into Redshift for analytics.<br />
-                • Automated workflows using Airflow, Lambda, and Python scripts.<br />
-                • Improved pipeline efficiency by 20% with optimized S3 → Glue → Redshift flow.<br />
-                • Built validation scripts and monitoring systems ensuring data accuracy.
-              </p>
-            </div>
-            <div class="item">
-              <p>Jan 2022 – Dec 2023</p>
-              <p class="center">Programmer – Tata Consultancy Services</p>
-              <p>
-                • Delivered L1/L2 Technical Support ensuring SLA compliance.<br />
-                • Diagnosed and resolved issues across Windows/Linux servers & Azure AD.<br />
-                • Managed user provisioning, access control, and system health checks.<br />
-                • Documented troubleshooting processes to enhance operational efficiency.
-              </p>
-            </div>
-            <div class="item">
-              <p>Sep 2021 – Nov 2021</p>
-              <p class="center">Data Annotation Specialist – Digiyoda</p>
-              <p>
-                • Labeled & validated large datasets (98% accuracy) for ML/NLP models.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="right">
-        <div class="skills__wrapper" data-aos="fade-left">
-          <div class="skill-box">
+        <!-- Python -->
+        <div class="skill-sphere python">
+          <div class="sphere-content">
+            <i class="fab fa-python"></i>
             <h4>Python</h4>
-            <div class="progress__wrap"><span data-percent="90" class="progress__bar"><span
-                  class="tooltip">90%</span></span></div>
-          </div>
-          <div class="skill-box">
-            <h4>PySpark</h4>
-            <div class="progress__wrap"><span data-percent="85" class="progress__bar"><span
-                  class="tooltip">85%</span></span></div>
-          </div>
-          <div class="skill-box">
-            <h4>SQL / Data Modeling</h4>
-            <div class="progress__wrap"><span data-percent="88" class="progress__bar"><span
-                  class="tooltip">88%</span></span></div>
-          </div>
-          <div class="skill-box">
-            <h4>AWS (S3, Glue, Redshift, Lambda, EMR)</h4>
-            <div class="progress__wrap"><span data-percent="80" class="progress__bar"><span
-                  class="tooltip">80%</span></span></div>
-          </div>
-          <div class="skill-box">
-            <h4>Airflow</h4>
-            <div class="progress__wrap"><span data-percent="75" class="progress__bar"><span
-                  class="tooltip">75%</span></span></div>
-          </div>
-          <div class="skill-box">
-            <h4>ETL / Data Pipelines</h4>
-            <div class="progress__wrap"><span data-percent="90" class="progress__bar"><span
-                  class="tooltip">90%</span></span></div>
-          </div>
-          <div class="skill-box">
-            <h4>Data Warehousing</h4>
-            <div class="progress__wrap"><span data-percent="80" class="progress__bar"><span
-                  class="tooltip">80%</span></span></div>
-          </div>
-          <div class="skill-box">
-            <h4>Power BI / Tableau</h4>
-            <div class="progress__wrap"><span data-percent="65" class="progress__bar"><span
-                  class="tooltip">65%</span></span></div>
+            <div class="skill-level">Expert</div>
           </div>
         </div>
+
+        <!-- SQL -->
+        <div class="skill-sphere sql">
+          <div class="sphere-content">
+            <i class="fas fa-database"></i>
+            <h4>SQL</h4>
+            <div class="skill-level">Expert</div>
+          </div>
+        </div>
+
+        <!-- PySpark -->
+        <div class="skill-sphere pyspark">
+          <div class="sphere-content">
+            <i class="fas fa-fire"></i>
+            <h4>PySpark</h4>
+            <div class="skill-level">Expert</div>
+          </div>
+        </div>
+
+        <!-- ETL Design -->
+        <div class="skill-sphere etl">
+          <div class="sphere-content">
+            <i class="fas fa-project-diagram"></i>
+            <h4>ETL Design</h4>
+            <div class="skill-level">Expert</div>
+          </div>
+        </div>
+
+        <!-- Pipeline Automation -->
+        <div class="skill-sphere pipeline">
+          <div class="sphere-content">
+            <i class="fas fa-cogs"></i>
+            <h4>Pipeline Automation</h4>
+            <div class="skill-level">Expert</div>
+          </div>
+        </div>
+
+        <!-- Apache Spark -->
+        <div class="skill-sphere spark">
+          <div class="sphere-content">
+            <i class="fas fa-bolt"></i>
+            <h4>Apache Spark</h4>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+
+        <!-- Kafka -->
+        <div class="skill-sphere kafka">
+          <div class="sphere-content">
+            <i class="fas fa-stream"></i>
+            <h4>Kafka</h4>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+
+        <!-- Hadoop -->
+        <div class="skill-sphere hadoop">
+          <div class="sphere-content">
+            <i class="fas fa-server"></i>
+            <h4>Hadoop</h4>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+
+        <!-- HDFS -->
+        <div class="skill-sphere hdfs">
+          <div class="sphere-content">
+            <i class="fas fa-hdd"></i>
+            <h4>HDFS</h4>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+
+        <!-- AWS Glue -->
+        <div class="skill-sphere glue">
+          <div class="sphere-content">
+            <i class="fab fa-aws"></i>
+            <h4>AWS Glue</h4>
+            <div class="skill-level">Expert</div>
+          </div>
+        </div>
+
+        <!-- Redshift -->
+        <div class="skill-sphere redshift">
+          <div class="sphere-content">
+            <i class="fas fa-warehouse"></i>
+            <h4>Redshift</h4>
+            <div class="skill-level">Expert</div>
+          </div>
+        </div>
+
+        <!-- Lambda -->
+        <div class="skill-sphere lambda">
+          <div class="sphere-content">
+            <i class="fas fa-lambda"></i>
+            <h4>Lambda</h4>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+
+        <!-- Step Functions -->
+        <div class="skill-sphere stepfunctions">
+          <div class="sphere-content">
+            <i class="fas fa-sitemap"></i>
+            <h4>Step Functions</h4>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+
+        <!-- DMS -->
+        <div class="skill-sphere dms">
+          <div class="sphere-content">
+            <i class="fas fa-exchange-alt"></i>
+            <h4>DMS</h4>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+
+        <!-- EMR -->
+        <div class="skill-sphere emr">
+          <div class="sphere-content">
+            <i class="fas fa-chart-line"></i>
+            <h4>EMR</h4>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+
+        <!-- S3 -->
+        <div class="skill-sphere s3">
+          <div class="sphere-content">
+            <i class="fas fa-cloud"></i>
+            <h4>S3</h4>
+            <div class="skill-level">Expert</div>
+          </div>
+        </div>
+
+        <!-- Athena -->
+        <div class="skill-sphere athena">
+          <div class="sphere-content">
+            <i class="fas fa-search"></i>
+            <h4>Athena</h4>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+
+        <!-- CloudWatch -->
+        <div class="skill-sphere cloudwatch">
+          <div class="sphere-content">
+            <i class="fas fa-eye"></i>
+            <h4>CloudWatch</h4>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+
+        <!-- IAM -->
+        <div class="skill-sphere iam">
+          <div class="sphere-content">
+            <i class="fas fa-shield-alt"></i>
+            <h4>IAM</h4>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+
+        <!-- Apache Airflow -->
+        <div class="skill-sphere airflow">
+          <div class="sphere-content">
+            <i class="fas fa-wind"></i>
+            <h4>Apache Airflow</h4>
+            <div class="skill-level">Expert</div>
+          </div>
+        </div>
+
+        <!-- Git -->
+        <div class="skill-sphere git">
+          <div class="sphere-content">
+            <i class="fab fa-git-alt"></i>
+            <h4>Git</h4>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+
+        <!-- GitHub -->
+        <div class="skill-sphere github">
+          <div class="sphere-content">
+            <i class="fab fa-github"></i>
+            <h4>GitHub</h4>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+
+        <!-- EC2 -->
+        <div class="skill-sphere ec2">
+          <div class="sphere-content">
+            <i class="fas fa-server"></i>
+            <h4>EC2</h4>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+
+        <!-- Linux -->
+        <div class="skill-sphere linux">
+          <div class="sphere-content">
+            <i class="fab fa-linux"></i>
+            <h4>Linux</h4>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+
+        <!-- Performance Optimization -->
+        <div class="skill-sphere performance">
+          <div class="sphere-content">
+            <i class="fas fa-tachometer-alt"></i>
+            <h4>Performance Optimization</h4>
+            <div class="skill-level">Expert</div>
+          </div>
+        </div>
+
+        <!-- EventBridge -->
+        <div class="skill-sphere eventbridge">
+          <div class="sphere-content">
+            <i class="fas fa-broadcast-tower"></i>
+            <h4>EventBridge</h4>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+
+        <!-- Data Validation -->
+        <div class="skill-sphere validation">
+          <div class="sphere-content">
+            <i class="fas fa-check-circle"></i>
+            <h4>Data Validation</h4>
+            <div class="skill-level">Expert</div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- projects section -->
   <section id="work" class="container work">
-    <h2 class="section_heading" data-aos="fade-right">Projects</h2>
+    <h2 class="section_heading" data-aos="fade-right">Featured Projects</h2>
 
-    <div class="flex row">
-      <div class="left" data-aos="fade-right">
-        <div class="content">
-          <h2>GenFlow – Workflow Automation & ETL Orchestration</h2>
-          <h3>BI Hub Solution, 2024</h3>
-          <p>
-            Developed a workflow automation platform that orchestrates ETL pipelines with drag-and-drop design.
-            Created PySpark Glue jobs for transformations and Redshift loading, integrated with Airflow for
-            orchestration,
-            and implemented monitoring, scheduling, and data validation for reliability.
-          </p>
+    <div class="project-card" data-aos="fade-up">
+      <div class="project-header">
+        <div class="project-icon">
+          <i class="fas fa-cogs"></i>
+        </div>
+        <div class="project-meta">
+          <h3>Workflow Automation & ETL Orchestration Platform</h3>
+          <span class="project-year">NEWGEN TECHNOMATE LLP • 2024</span>
         </div>
       </div>
-      <div class="right" data-aos="fade-left">
-        <div class="img-wrapper">
-          <img src="./images/pipline.png" alt="GenFlow Project" />
+      <div class="project-content">
+        <p>Developed a comprehensive workflow automation platform that orchestrates ETL pipelines with intuitive
+          drag-and-drop design. Created optimized PySpark Glue jobs for data transformations and Redshift loading,
+          seamlessly integrated with Airflow for robust orchestration, and implemented comprehensive monitoring,
+          scheduling, and data validation systems for maximum reliability.</p>
+        <div class="project-tech">
+          <span class="tech-badge">PySpark</span>
+          <span class="tech-badge">AWS Glue</span>
+          <span class="tech-badge">Redshift</span>
+          <span class="tech-badge">Airflow</span>
+          <span class="tech-badge">Python</span>
         </div>
+      </div>
+      <div class="project-image">
+        <img src="./images/data_lake.png" alt="GenFlow Project" loading="lazy" />
       </div>
     </div>
   </section>
 
   <!-- awards section -->
-  <section id="awards" class="container">
+  <section id="awards" class="container awards">
     <h2 class="section_heading" data-aos="fade-right">Awards & Recognition</h2>
-    <ul data-aos="fade-up">
-      <li><strong>Xcelerate Victor Award – TCS (2023):</strong> Recognized for ownership and high-impact delivery.</li>
-      <li><strong>Xcelerate Warrior Award – TCS (2022):</strong> Honored for continuous learning and technical
-        advancement.</li>
-    </ul>
+    <div class="awards-grid" data-aos="fade-up">
+      <div class="award-card">
+        <div class="award-icon">
+          <i class="fas fa-trophy"></i>
+        </div>
+        <div class="award-content">
+          <h3>Xcelerate Victor Award</h3>
+          <p class="award-company">Tata Consultancy Services • 2023</p>
+          <p class="award-desc">Recognized for exceptional ownership and high-impact delivery in technical support
+            operations</p>
+        </div>
+      </div>
+      <div class="award-card">
+        <div class="award-icon">
+          <i class="fas fa-medal"></i>
+        </div>
+        <div class="award-content">
+          <h3>Xcelerate Warrior Award</h3>
+          <p class="award-company">Tata Consultancy Services • 2022</p>
+          <p class="award-desc">Honored for continuous learning and technical advancement in cloud technologies</p>
+        </div>
+      </div>
+    </div>
 
-    <h3 data-aos="fade-right" style="margin-top:20px;">Languages</h3>
-    <p data-aos="fade-up">English (Professional) | Hindi (Native) | Marathi (Native)</p>
+    <div class="languages-section" data-aos="fade-up">
+      <h3><i class="fas fa-globe"></i> Languages</h3>
+      <div class="language-tags">
+        <span class="lang-tag">English <small>(Professional)</small></span>
+        <span class="lang-tag">Hindi <small>(Native)</small></span>
+        <span class="lang-tag">Marathi <small>(Native)</small></span>
+      </div>
+    </div>
   </section>
 
   <!-- contact section -->
   <section id="contact" class="container contact">
     <h2 class="section_heading" data-aos="fade-right">Contact Me</h2>
-    <div class="flex">
-      <div class="left" data-aos="fade-right">
-        <p>Let’s collaborate on data engineering, workflow automation, or analytics projects.</p>
+    <div class="contact-grid" data-aos="fade-up">
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <div class="contact-info">
+          <a href="mailto:swapnilbhakare19@gmail.com">swapnilbhakare19@gmail.com</a>
+        </div>
       </div>
-      <div class="right">
-        <p>Email: <a href="mailto:swapnilbhakare7@gmail.com">swapnilbhakare7@gmail.com</a></p>
-        <p>Phone: <a href="tel:+917030001343">+91 7030001343</a></p>
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+        <div class="contact-info">
+          <a href="tel:+917030001343">+91 7030001343</a>
+        </div>
+      </div>
+    </div>
+    <div class="social-section" data-aos="fade-up">
+      <h3><i class="fas fa-share-alt"></i> Connect on Social Media</h3>
+      <div class="social-grid">
+        <a href="https://github.com/swapnilbhakare" target="_blank" class="social-card">
+          <i class="fab fa-github"></i><span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/swapnil-bhakare" target="_blank" class="social-card">
+          <i class="fab fa-linkedin"></i><span>LinkedIn</span>
+        </a>
+        <a href="https://twitter.com/SwapnilBhakre_7" target="_blank" class="social-card">
+          <i class="fab fa-twitter"></i><span>Twitter</span>
+        </a>
+        <a href="https://wa.me/+917030001343" target="_blank" class="social-card">
+          <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+        </a>
       </div>
     </div>
   </section>
 
+
   <!-- footer section -->
-  <footer class="container">
-    <div class="flex">
-      <div class="left" data-aos="fade-right">
-        <h4>Stay curious, stay data-driven! ✨</h4>
-      </div>
-      <div class="right">
-        <div class="social_section flex">
-          <a href="https://wa.me/+917030001343"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://github.com/swapnilbhakare"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/swapnil-bhakare"><i class="fab fa-linkedin"></i></a>
-          <a href="https://twitter.com/SwapnilBhakre_7"><i class="fab fa-twitter"></i></a>
+  <footer class="footer-attractive">
+    <div class="container">
+      <div class="footer-main">
+        <div class="open-to-work">
+          <i class="fas fa-briefcase"></i>
+          <span>Open to work for data engineering projects</span>
         </div>
+        <h3><span id="day">Loading...</span>...! Stay curious, stay data-driven! ✨</h3>
+      </div>
+      <div class="footer-divider-line"></div>
+      <div class="footer-bottom">
+        <span>© 2025 Swapnil Bhakare</span>
       </div>
     </div>
-    <hr />
-    <span>© 2025 Swapnil Bhakare</span>
   </footer>
 
   <script src="./js/main.js"></script>
   <script src="./js/scroll.js"></script>
-  <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="./js/aos.js"></script>
   <script>
     AOS.init({ duration: 2000 });

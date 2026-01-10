@@ -128,14 +128,15 @@
       margin-top: 60px;
       display: flex;
       flex-direction: column;
-  }
-  section.skills .skills__wrapper .skill-box {
-      max-width: 90%;
-      margin: 17px auto;
+      gap: 40px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
   }
   section.skills .content .left {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
   }
   .work .row {
       margin: 88px 0;
@@ -309,15 +310,16 @@
   section#skills .content {
       margin-top: 60px;
       display: flex;
-      /* flex-direction: column; */
-  }
-  section.skills .skills__wrapper .skill-box {
-      max-width: 90%;
-      margin: 17px auto;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
   }
   section.skills .content .left {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
   }
   .work .row {
       margin: 88px 0;
@@ -369,4 +371,150 @@
       margin: 12px;
       font-size: 34px;
   }
+}
+
+
+/* NAVBAR RESPONSIVE FIX */
+@media only screen and (max-width: 1023px) {
+  .navbar-stunning .nav-items {
+    position: fixed !important;
+    top: 80px !important;
+    right: -100% !important;
+    width: 250px !important;
+    height: calc(100vh - 80px) !important;
+    background: rgba(0, 0, 0, 0.95) !important;
+    backdrop-filter: blur(20px) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 2rem !important;
+    gap: 1rem !important;
+    transition: right 0.3s ease !important;
+    border-left: 2px solid rgba(255, 99, 71, 0.3) !important;
+    z-index: 999 !important;
+  }
+  
+  .navbar-stunning .nav-items.active {
+    right: 0 !important;
+  }
+  
+  .mobile-menu {
+    display: flex !important;
+    position: fixed;
+    top: 1.5rem;
+    right: 2rem;
+    z-index: 10001 !important;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    pointer-events: auto !important;
+  }
+  
+  .mobile-menu span {
+    width: 25px;
+    height: 3px;
+    background: #ff6347;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .brand-info span {
+    display: none;
+  }
+}
+
+
+/* MOVE HOME CONTENT DOWN ON MOBILE */
+@media only screen and (max-width: 768px) {
+  section#home {
+    padding-top: 120px !important;
+    height: auto !important;
+    min-height: 100vh;
+  }
+  
+  section#home .left h1 {
+    margin-top: 1rem;
+  }
+  
+  section#home .container {
+    padding-bottom: 3rem;
+  }
+}
+
+
+/* MOBILE MENU ACTIVE STATE */
+@media only screen and (max-width: 768px) {
+  .navbar-stunning .nav-items {
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    width: 250px;
+    height: calc(100vh - 80px);
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(20px);
+    display: flex !important;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    transition: right 0.3s ease;
+    border-left: 2px solid rgba(255, 99, 71, 0.3);
+    z-index: 999;
+  }
+  
+  .navbar-stunning .nav-items.active {
+    right: 0;
+  }
+  
+  .nav-link {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+  }
+  
+  .mobile-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .mobile-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+}
+
+
+/* HIDE MOBILE MENU DURING LOADING */
+.mobile-menu {
+  display: none !important;
+}
+
+.preloader.hide-preloader ~ .mobile-menu {
+  display: flex !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .preloader.hide-preloader ~ .mobile-menu {
+    display: flex !important;
+  }
+}
+
+
+/* HIDE HAMBURGER ON DESKTOP */
+@media only screen and (min-width: 1024px) {
+  .mobile-menu {
+    display: none !important;
+  }
+  
+  .navbar-stunning .nav-items {
+    display: flex !important;
+  }
+}
+
+
+/* FORCE MENU ACTIVE STATE */
+.nav-items.active {
+  right: 0 !important;
 }

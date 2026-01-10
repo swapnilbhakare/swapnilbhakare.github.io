@@ -1,0 +1,9 @@
+CHANGE THIS IN YOUR index.html FOOTER:
+
+FROM:
+<i class="fas fa-laptop-code"></i>
+
+TO:
+<i class="fas fa-circle"></i>
+
+This will show a green blinking circle dot like "Available" status.
