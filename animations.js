@@ -1,8 +1,7 @@
 // Calculate work experience from Octrans Technologies to Newgen Technomate
 function calculateWorkExperience() {
     // Work experience periods (excluding education)
-    const octransStart = new Date('2021-05-01'); // May 2021
-    const octransEnd = new Date('2021-12-31');   // Dec 2021
+   
     const tcsStart = new Date('2022-01-01');     // Jan 2022
     const tcsEnd = new Date('2023-12-31');       // Dec 2023
     const newgenStart = new Date('2024-01-01');  // Jan 2024
