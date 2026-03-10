@@ -381,6 +381,7 @@ div.img::after {
   will-change: transform;
   backface-visibility: hidden;
   transform: translateZ(0);
+  pointer-events: none;
 }
 
 @keyframes spin {
